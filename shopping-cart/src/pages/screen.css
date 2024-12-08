@@ -1,0 +1,296 @@
+/* General Body Styling */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.screen-container {
+    padding: 0 15px;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Content Section */
+.custom-content {
+    background-color: #fce4ec;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.custom-message h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f06292;
+}
+
+.custom-message p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 5px;
+
+    /* Soft pink background */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    color: #333 !important;
+    /* Dark text color */
+    margin-right: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f06292 !important;
+    transform: scale(1.05);
+    /* Soft pink on hover */
+}
+
+/* Header Image Section */
+.header-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Header Overlay Button */
+.header-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cta-btn {
+    background-color: #f48fb1;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f06292;
+    transform: scale(1.05);
+}
+
+/* Main Content Layout */
+.screen-row {
+    margin-bottom: 40px;
+}
+
+/* Product and Cart Section Layout */
+.screen-row .col-md-8,
+.screen-row .col-md-4 {
+    padding: 15px;
+}
+
+/* Cart Sidebar Styling */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 12px 0 0 12px;
+    transition: right 0.3s ease-in-out;
+}
+
+.cart-sidebar.show {
+    right: 0;
+}
+
+/* Cart Section */
+.cart-section {
+    background-color: #f8bbd0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    animation: popUp 0.3s ease-out;
+}
+
+/* Pop-up Effect for Cart */
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+/* Table Styling */
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #fce4ec;
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #f8bbd0;
+}
+
+.table-bordered td,
+.table-bordered th {
+    border-color: #f06292;
+}
+
+.table th {
+    background-color: #f8bbd0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table td {
+    font-size: 1.1rem;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Modal Content */
+.modal-content {
+    border-radius: 15px;
+}
+
+/* Modal Header and Footer */
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+/* Cart Button Styles */
+.cart-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f06292;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1001;
+    transition: background-color 0.3s ease;
+}
+
+.cart-toggle-btn:hover {
+    background-color: #d81b60;
+}
+
+.cart-toggle-btn svg {
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .screen-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .screen-row .col-md-8,
+    .screen-row .col-md-4 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header-content {
+        padding: 20px 10px;
+    }
+
+    .header-image {
+        border-radius: 12px;
+    }
+}
+
+/* Welcome Text Sections */
+.welcome-above-image,
+.welcome-below-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.welcome-above-image h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.welcome-above-image p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.welcome-below-image h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.welcome-below-image p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.welcome-below-image .btn {
+    margin-top: 10px;
+}
+
+/* Header Image */
+.header-image-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Cart Sidebar */
+.cart-col {
+    margin-top: 20px;
+}
+
+.cart-sidebar {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

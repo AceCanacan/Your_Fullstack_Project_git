@@ -1,0 +1,114 @@
+/* General Styles for Product List */
+/* Override link styles inside product cards */
+.product-card a {
+    color: #333;
+    /* Dark gray or any other color you prefer */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.product-card a:hover {
+    color: #f06292;
+    /* Soft pink color on hover for a nice effect */
+    text-decoration: none;
+    /* Keep it without underline on hover */
+}
+
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+.btn-success {
+    background-color: #f48fb1;
+    /* Soft pastel pink */
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Ensure the button stays the same pink color on hover */
+.btn-success:hover {
+    background-color: #f48fb1;
+    /* Keep it the same soft pastel pink */
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #f06292;
+    /* Slightly darker pink */
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+/* Ensure the secondary button stays in the pink family on hover */
+.btn-secondary:hover {
+    background-color: #f06292;
+    /* Keep it the same slightly darker pink on hover */
+    transform: scale(1.05);
+}
+
+.btn-secondary:disabled {
+    background-color: #f8bbd0;
+    /* Disabled pastel color */
+}
+
+/* Pagination Styles */
+.pagination-custom {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination-custom .page-item {
+    margin: 0 5px;
+}
+
+.pagination-custom .page-item.active .page-link {
+    background-color: #f06292;
+    color: white;
+    border: none;
+}
+
+.pagination-custom .page-link {
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+
+.pagination-custom .page-link:hover {
+    background-color: #f48fb1;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Loading Spinner */
+.spinner-border {
+    color: #f48fb1;
+    /* Pastel pink spinner */
+}
+
+/* Specific Button Styling within Product Cards */
+.product-card .btn-success {
+    background-color: #f48fb1;
+    /* Soft pastel pink */
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Ensure the button stays the same pink color on hover */
+.product-card .btn-success:hover {
+    background-color: #f48fb1;
+    /* Keep it the same soft pastel pink */
+    transform: scale(1.05);
+}
